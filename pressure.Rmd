@@ -1,0 +1,16 @@
+---
+title: "Pressure Graph"
+author: "Joyce Robbins"
+date: "3/31/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
