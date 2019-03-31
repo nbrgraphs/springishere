@@ -29,6 +29,12 @@ Bring the pull request into your workspace:
 usethis::pr_fetch(6)
 ```
 
+```
+✔ Checking out PR 'jtr13/springishere/#6' (@nbrgraphs): 'convert to line graph'
+✔ Switching to branch 'nbrgraphs-patch-2'
+```
+
+
 You are now effectively working as the person who submitted the pull request.  Make changes to files as desired. In this case, I added `col = "red"` to the `pressure` plot in `pressure.Rmd` since `@nbrgraphs` did not respond to my request to do so.
 
 Commit the changes, either by clicked the staged box next to `pressure.Rmd` and then the COMMIT button, or as follows:

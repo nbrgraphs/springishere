@@ -379,9 +379,12 @@ $(document).ready(function () {
   Use `force = TRUE` to force installation</code></pre>
 <p>Open the local project for the repo and pull changes, either by clicking on the PULL button in RStudio or as follows:</p>
 <pre class="{r}"><code>git2r::pull()</code></pre>
+<pre><code>Already up-to-date</code></pre>
 <p>Look for the pull request number in the <a href="https://github.com/jtr13/springishere/pulls">list of pull requests</a>. We see that the <a href="https://github.com/jtr13/springishere/pull/6">pull request we want</a> is number 6.</p>
 <p>Bring the pull request into your workspace:</p>
 <pre class="{r}"><code>usethis::pr_fetch(6)</code></pre>
+<pre><code>✔ Checking out PR 'jtr13/springishere/#6' (@nbrgraphs): 'convert to line graph'
+✔ Switching to branch 'nbrgraphs-patch-2'</code></pre>
 <p>You are now effectively working as the person who submitted the pull request. Make changes to files as desired. In this case, I added <code>col = &quot;red&quot;</code> to the <code>pressure</code> plot in <code>pressure.Rmd</code> since <code>@nbrgraphs</code> did not respond to my request to do so.</p>
 <p>Commit the changes, either by clicked the staged box next to <code>pressure.Rmd</code> and then the COMMIT button, or as follows:</p>
 <pre class="{r}"><code>git2r::add(path = &quot;pressure.Rmd&quot;)
