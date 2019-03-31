@@ -37,24 +37,28 @@ usethis::pr_fetch(6)
 
 You are now effectively working as the person who submitted the pull request.  Make changes to files as desired. In this case, I added `col = "red"` to the `pressure` plot in `pressure.Rmd` since `@nbrgraphs` did not respond to my request to do so.
 
-Commit the changes, either by clicked the staged box next to `pressure.Rmd` and then the COMMIT button, or as follows:
-
-```{r}
-git2r::add(path = "pressure.Rmd")
-git2r::commit(message = "change line color")
-```
+Commit the changes, either by clicked the staged box next to `pressure.Rmd` and then the COMMIT button.
 
 Push the commit to the pull request branch:
 
 ```{r}
-usethis::pr_push()
+> usethis::pr_push()
 ```
 
-Clean up:
+✔ Checking that local branch 'nbrgraphs-patch-2' has the changes in 'nbrgraphs/patch-2'
+✔ Pushing local 'nbrgraphs-patch-2' branch to 'nbrgraphs:patch-2'
+✔ View PR at 'https://github.com/jtr13/springishere/pull/6'
+
+And finally, cleanup: 
 
 ```{r}
-usethis::pr_finish()
+> pr_finish()
 ```
 
+```
+✔ Switching back to 'master' branch
+✔ Pulling changes from GitHub source repo 'origin/master'
+✔ Deleting local 'nbrgraphs-patch-2' branch
+```
 
 

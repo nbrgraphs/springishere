@@ -386,13 +386,15 @@ $(document).ready(function () {
 <pre><code>✔ Checking out PR 'jtr13/springishere/#6' (@nbrgraphs): 'convert to line graph'
 ✔ Switching to branch 'nbrgraphs-patch-2'</code></pre>
 <p>You are now effectively working as the person who submitted the pull request. Make changes to files as desired. In this case, I added <code>col = &quot;red&quot;</code> to the <code>pressure</code> plot in <code>pressure.Rmd</code> since <code>@nbrgraphs</code> did not respond to my request to do so.</p>
-<p>Commit the changes, either by clicked the staged box next to <code>pressure.Rmd</code> and then the COMMIT button, or as follows:</p>
-<pre class="{r}"><code>git2r::add(path = &quot;pressure.Rmd&quot;)
-git2r::commit(message = &quot;change line color&quot;)</code></pre>
+<p>Commit the changes, either by clicked the staged box next to <code>pressure.Rmd</code> and then the COMMIT button.</p>
 <p>Push the commit to the pull request branch:</p>
-<pre class="{r}"><code>usethis::pr_push()</code></pre>
-<p>Clean up:</p>
-<pre class="{r}"><code>usethis::pr_finish()</code></pre>
+<pre class="{r}"><code>&gt; usethis::pr_push()</code></pre>
+<p>✔ Checking that local branch ‘nbrgraphs-patch-2’ has the changes in ‘nbrgraphs/patch-2’ ✔ Pushing local ‘nbrgraphs-patch-2’ branch to ‘nbrgraphs:patch-2’ ✔ View PR at ‘<a href="https://github.com/jtr13/springishere/pull/6" class="uri">https://github.com/jtr13/springishere/pull/6</a>’</p>
+<p>And finally, cleanup:</p>
+<pre class="{r}"><code>&gt; pr_finish()</code></pre>
+<pre><code>✔ Switching back to 'master' branch
+✔ Pulling changes from GitHub source repo 'origin/master'
+✔ Deleting local 'nbrgraphs-patch-2' branch</code></pre>
 
 
 
