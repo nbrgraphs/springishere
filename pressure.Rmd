@@ -11,6 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ```{r pressure, echo=FALSE}
-plot(pressure, type = "l", color = "red")
+plot(pressure, type = "l", 
+     color = "red")
 ```
 
