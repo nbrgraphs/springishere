@@ -1,6 +1,6 @@
 ---
 title: "Fix pull request demo"
-author: Joyce Robbins
+author: "Joyce Robbins"
 date: "3/31/2019"
 output: html_notebook
 editor_options: 
