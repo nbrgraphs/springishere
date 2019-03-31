@@ -1777,8 +1777,9 @@ $(document).ready(function () {
 <p>Open the local project for the repo and pull changes, either by clicking on the PULL button in RStudio or as follows:</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZ2l0MnI6OnB1bGwoKVxuYGBgIn0= -->
-<pre class="r"><code>git2r::pull()</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZ2l0MnI6OnB1bGwoKVxuXG5gYGAifQ== -->
+<pre class="r"><code>git2r::pull()
+</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-output-begin eyJkYXRhIjoiQWxyZWFkeSB1cC10by1kYXRlXG4ifQ== -->
 <pre><code>Already up-to-date</code></pre>
@@ -1789,9 +1790,13 @@ $(document).ready(function () {
 <p>Bring the pull request into your workspace:</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudXNldGhpczo6cHJfZmV0Y2goNilcbmBgYCJ9 -->
-<pre class="r"><code>usethis::pr_fetch(6)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudXNldGhpczo6cHJfZmV0Y2goNilcblxuYGBgIn0= -->
+<pre class="r"><code>usethis::pr_fetch(6)
+</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXHUwMDFiWzMxbVx1MDAxYlszMm3inJRcdTAwMWJbMzFtXHUwMDFiWzM5bSBTZXR0aW5nIGFjdGl2ZSBwcm9qZWN0IHRvIFx1MDAxYlszNG0nL1VzZXJzL0pveWNlUm9iYmlucy9zcHJpbmdpc2hlcmUnXHUwMDFiWzM5bVxuIn0= -->
+<pre><code>[31m[32m✔[31m[39m Setting active project to [34m'/Users/JoyceRobbins/springishere'[39m</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>You are now effectively working as the person who submitted the pull request. Make changes to files as desired. In this case, I added <code>col = &quot;red&quot;</code> to the <code>pressure</code> plot in <code>pressure.Rmd</code> since <code>@nbrgraphs</code> did not respond to my request to do so.</p>
