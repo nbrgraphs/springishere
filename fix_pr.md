@@ -45,9 +45,11 @@ Push the commit to the pull request branch:
 > usethis::pr_push()
 ```
 
+```
 ✔ Checking that local branch 'nbrgraphs-patch-2' has the changes in 'nbrgraphs/patch-2'
 ✔ Pushing local 'nbrgraphs-patch-2' branch to 'nbrgraphs:patch-2'
 ✔ View PR at 'https://github.com/jtr13/springishere/pull/6'
+```
 
 And finally, cleanup: 
 
