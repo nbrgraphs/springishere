@@ -1,0 +1,17 @@
+---
+title: "usethis2"
+author: "Joyce Robbins"
+date: "3/31/2019"
+output: html_document
+---
+
+```{r}
+usethis::pr_push()
+```
+
+
+```{r}
+usethis::pr_finish()
+```
+
+
