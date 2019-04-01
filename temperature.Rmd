@@ -2,7 +2,7 @@
 title: "temperature"
 author: "Joyce Robbins"
 date: "3/31/2019"
-output: html_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
@@ -18,9 +18,8 @@ df <- tibble(date = as.Date("2019-03-20") + (0:6),
                  low = c(37, 41, 38, 35, 38, 42, 33),
                  high = c(53, 46, 49, 48, 60, 56, 49)) %>% 
   gather(key, value, -date)
+
+ggplot(df, aes(date, value, color = key)) + geom_line()
 ```
 
-```{r}
-usethis::pr_fetch(3)
-```
 
