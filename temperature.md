@@ -26,7 +26,7 @@ df <- tibble(date = as.Date("2019-03-20") + (0:6),
                  high = c(53, 46, 49, 48, 60, 56, 49)) %>% 
   gather(key, value, -date)
 
-ggplot(df, aes(date, value, color = key)) + geom_line()
+ggplot(df, aes(date, value, color = key)) + geom_line() + ggtitle("This Week's Highs and Lows")
 ```
 
 ![](temperature_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
