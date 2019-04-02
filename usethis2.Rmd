@@ -5,6 +5,10 @@ date: "3/31/2019"
 output: html_document
 ---
 
+```{r, include = FALSE}
+usethis::pr_fetch(8)
+```
+
 ```{r}
 usethis::pr_push()
 ```
